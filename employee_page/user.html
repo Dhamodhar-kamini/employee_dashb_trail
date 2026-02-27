@@ -138,25 +138,50 @@
             
             <div class="container">
                 <!-- Header -->
-                <header class="page-header">
-                    <div class="flex items-center gap-10">
-                        <!-- Mobile Menu Button -->
-                        <button id="mobileMenuBtn" class="mobile-menu-btn">
-                            <i class="fa-solid fa-bars"></i>
-                        </button>
-                        
-                        <div class="page-title">
-                            <h1>Employee Dashboard</h1>
-                            <div class="breadcrumbs">
-                                <i class="fa-solid fa-house"></i> > Dashboard > Employee Dashboard
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex gap-10 header-actions">
-                        <button class="btn btn-outline"><i class="fa-solid fa-file-export"></i> Export</button>
-                        <button class="btn btn-outline"><i class="fa-solid fa-calendar"></i> 15-04-2025</button>
-                    </div>
-                </header>
+                <nav class="top-navbar">
+        <!-- Search Section -->
+        <div class="search-wrapper">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search in ">
+                
+                
+            </div>
+        </div>
+
+        <!-- Right Icons Section -->
+        <div class="nav-actions">
+            <button class="nav-icon-btn"><i class="fa-solid fa-border-all"></i></button>
+            <button class="nav-icon-btn notification-btn"><i class="fa-regular fa-bell"></i></button>
+            <button class="nav-icon-btn"><i class="fa-regular fa-envelope"></i></button>
+            <button class="nav-icon-btn"><i class="fa-solid fa-gear"></i></button>
+            
+            <div class="avatar-container">
+                <img src="../assets/profiledp.jpeg" alt="User Avatar">
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER (Dashboard Title & Breadcrumbs) -->
+    <header class="page-header">
+        <div class="flex items-center gap-10">
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <div class="page-title">
+                <h1>Employee Dashboard</h1>
+                <div class="breadcrumbs">
+                    <i class="fa-solid fa-house"></i> > Dashboard > Employee Dashboard
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-10 header-actions">
+            <button class="btn btn-outline"><i class="fa-solid fa-file-export"></i> Export</button>
+            <button class="btn btn-outline"><i class="fa-solid fa-calendar"></i> 15-04-2025</button>
+        </div>
+    </header>
 
                 <!-- ROW 1: Profile, Leave Chart, Leave Stats -->
                 <div class="grid-row grid-3">
